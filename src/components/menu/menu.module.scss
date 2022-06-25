@@ -1,0 +1,100 @@
+.menu {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+
+    &-item {
+        list-style-type: none;
+        &-name {
+            visibility: hidden;
+            opacity: 0;
+            width: 0;
+            height: 40px;
+            border-radius: 999px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            padding-left: 20px;
+            position: absolute;
+            z-index: -1;
+            background: linear-gradient(90deg, rgba(0, 183, 255, 1) 30%, rgba(255, 255, 199, 1) 100%);
+            right: 0;
+            top: 0;
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.25s linear;
+            overflow: hidden;
+        }
+    }
+    &-item:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    &-link {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(90deg, rgba(0, 183, 255, 1) 30%, rgba(255, 255, 199, 1) 100%);
+        text-decoration: none;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-icon {
+        color: var(--white);
+        z-index: 999;
+    }
+}
+@keyframes spiner {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@media (min-width: 992px) {
+    .menu {
+        &-link:hover &-item-name {
+            width: 130px;
+            opacity: 1;
+            visibility: visible;
+        }
+        &-link:hover &-icon {
+            animation: spiner 1 0.5s linear;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu {
+        bottom: 0;
+        left: 50%;
+        top: unset;
+        right: unset;
+        transform: translateX(-50%);
+
+        display: flex;
+        &-item:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .menu {
+        bottom: 0;
+        left: 50%;
+        top: unset;
+        right: unset;
+        transform: translateX(-50%);
+
+        display: flex;
+        &-item:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+}

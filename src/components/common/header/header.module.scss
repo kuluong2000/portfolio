@@ -1,0 +1,49 @@
+.header {
+    padding-top: 20px;
+}
+
+.header svg {
+    display: block;
+    font-size: 50px;
+    height: max-content;
+}
+
+.text-copy {
+    fill: none;
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-dasharray: 70 330;
+    stroke-dashoffset: 0;
+    -webkit-animation: stroke-offset 6s linear infinite;
+    animation: stroke-offset 6s linear infinite;
+    font-size: 40px;
+    font-weight: 700;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.text-copy:nth-child(5n + 2) {
+    stroke: #ffb86c;
+    -webkit-animation-delay: -2.4s;
+    animation-delay: -2.4s;
+}
+
+.text-copy:nth-child(5n + 3) {
+    stroke: #fff;
+    -webkit-animation-delay: -3.6s;
+    animation-delay: -3.6s;
+}
+
+.text-copy:nth-child(5n + 1) {
+    stroke: #6a5af9;
+    -webkit-animation-delay: -1.2s;
+    animation-delay: -1.2s;
+}
+
+@keyframes stroke-offset {
+    100% {
+        stroke-dashoffset: -400;
+    }
+}

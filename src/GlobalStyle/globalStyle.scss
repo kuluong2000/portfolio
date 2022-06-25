@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+    --primary-font: "Roboto", sans-serif;
+    --white: #fff;
+    --black: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 14px;
+    color: var(--black);
+
+    font-family: var(--primary-font);
+}
+
+.wrapper {
+    width: 100%;
+
+    background: rgb(58, 56, 151);
+    background: linear-gradient(90deg, rgba(58, 56, 151, 1) 30%, rgba(163, 161, 255, 1) 100%);
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}

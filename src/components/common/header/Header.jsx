@@ -8,7 +8,7 @@ export default function Header() {
       <div className="container">
         <svg height="50px">
           <symbol id="s-text">
-            <text text-anchor="start" x="0%" y="100%">
+            <text textAnchor="start" x="0%" y="100%">
               Hữu Lương
             </text>
           </symbol>

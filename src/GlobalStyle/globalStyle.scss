@@ -14,10 +14,35 @@
 body {
     font-size: 14px;
     color: var(--black);
-
+    overflow: overlay;
     font-family: var(--primary-font);
 }
 
+// custom scrollbar
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 5px;
+}
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
 .wrapper {
     width: 100%;
 
@@ -44,4 +69,23 @@ body {
     50% {
         border-color: orange;
     }
+}
+// custom css slick
+.slick-portfolio .slick-slide > div {
+    margin: 0 10px;
+}
+.slick-portfolio .slick-list {
+    margin: 0 -10px;
+}
+.slick-prev,
+.slick-next {
+    top: unset;
+    bottom: -50px;
+}
+.slick-next {
+    left: calc(50% + 20px);
+}
+.slick-prev {
+    left: unset;
+    right: calc(50% + 20px);
 }

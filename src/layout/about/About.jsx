@@ -19,14 +19,6 @@ export default function About() {
                 <p>Từ năm 2018-2022</p>
                 <p>Là sinh viên trường đại học sư phạm kỹ thuật</p>
               </li>
-              <li className={cx("about-item")}>
-                <p>Từ năm 2018-2022</p>
-                <p>Là sinh viên trường đại học sư phạm kỹ thuật</p>
-              </li>
-              <li className={cx("about-item")}>
-                <p>Từ năm 2018-2022</p>
-                <p>Là </p>
-              </li>
             </ul>
           </div>
         </div>

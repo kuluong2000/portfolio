@@ -4,6 +4,7 @@ import Header from "./components/common/header/Header";
 import Loading from "./components/common/header/loading/Loading";
 import Menu from "./components/menu/Menu";
 import About from "./layout/about/About";
+import Contact from "./layout/contact/Contact";
 import Home from "./layout/home/Home";
 import Portfolio from "./layout/portfolio/Portfolio";
 
@@ -23,6 +24,7 @@ export default function App() {
       {/* <Home></Home> */}
       <Portfolio />
       <About></About>
+      <Contact />
     </>
   );
 }

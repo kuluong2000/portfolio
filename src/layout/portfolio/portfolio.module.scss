@@ -45,7 +45,7 @@
 }
 
 .portfolio-item {
-    height: 400px;
+    height: 410px;
     margin: 15px 0;
     list-style-type: none;
     cursor: pointer;
@@ -119,5 +119,11 @@
     }
     span:nth-child(2n) {
         background-color: #ffb800;
+    }
+}
+// responsive
+@media (min-width: 768px) and (max-width: 991px) {
+    .portfolio-link img {
+        height: 150px;
     }
 }

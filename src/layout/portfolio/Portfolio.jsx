@@ -10,14 +10,14 @@ export default function Portfolio() {
   const menu = [
     {
       title: "Trip Guide",
-      image: require("../../assets/image/avatar.jpg"),
+      image: require("../../assets/image/tripguide.gif"),
       path: "https://tripguide-kuluong2000.vercel.app/",
       description: "Đây là sản phẩm mình làm về  du lịch",
       tags: ["HTML", "CSS", "JavaScript"],
     },
     {
       title: "Ozone",
-      image: require("../../assets/image/avatar.jpg"),
+      image: require("../../assets/image/ozone.gif"),
       path: "https://kuluong2000.github.io/Generic/Ozone/?fbclid=IwAR0Qi3HR1tcMuQNSPEnp-pdW2ixDvuwp7N-oXyG3FixH8ySj-NTfknSt4t0",
       description: "Đây là sản phẩm mình làm về  thị trường bất động sản",
       tags: ["HTML", "CSS", "JavaScript"],
@@ -31,14 +31,14 @@ export default function Portfolio() {
     },
     {
       title: "Restaurant",
-      image: require("../../assets/image/avatar.jpg"),
+      image: require("../../assets/image/restaurant.gif"),
       path: "https://kuluong2000.github.io/restaurant/",
       description: "Đây là sản phẩm mình làm về  Nhà hàng",
       tags: ["HTML", "CSS", "JavaScript"],
     },
     {
       title: "Baby Shop",
-      image: require("../../assets/image/avatar.jpg"),
+      image: require("../../assets/image/baby.gif"),
       path: "https://baby-shop-kuluong2000.vercel.app/",
       description: "Đây là sản phẩm mình làm về  shop thời trang cho trẻ em",
       tags: ["HTML", "CSS", "JavaScript"],
@@ -52,13 +52,44 @@ export default function Portfolio() {
     className: "slick-portfolio",
     lazyLoad: true,
     infinite: true,
+    dots: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
     // centerMode: true,
     // centerPadding: "20px",
-
     adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          arrow: false,
+        },
+      },
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ],
   };
   // ##########################################################//
   // JSX RENDER
